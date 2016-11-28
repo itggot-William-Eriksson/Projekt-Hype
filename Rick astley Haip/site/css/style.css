@@ -61,6 +61,13 @@ h1:hover {
 	text-decoration: none;
 }
 
+.videolank {
+	height: 0px;
+	text-align: center;
+	flex-grow: 1;
+	text-decoration: none;
+}
+
 .Gigsknapp {
 	height: 0px;
 	text-align: center;
@@ -84,10 +91,27 @@ img {
 	width: 100%;
 }
 
+.gigs {
+	display: flex;
+	flex-direction: column;
+}
+
+.gigsblock1 {
+	background-color: red;
+	display: flex;
+	flex-direction: row;
+}
+
+.gigsblock2 {
+	background-color: green;
+	display: flex;
+	flex-direction: row;
+}
+
 .videoblock {
 	background-position: center;
 	background-size: 2000px;
-	background-image: url(../img/Rick_Astley_Tivoli_Gardens.png);
+	background-image: url(../img/starz.png);
 }
 
 .rick50bild{
@@ -125,14 +149,17 @@ iframe {
 }
 
 video {
-	opacity: 10%;
+	flex-grow: 1;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-bottom: 0;
 	padding-top: 0;
 	/*border-bottom: 0;
 	border-top: 0;*/
-	margin: 20px;
+	margin: 0px;
+	padding: 0;
+	border: 0;
+
 	width: 100%;
 }
 

@@ -6,24 +6,31 @@
 		<title>Rickrolling Astley</title>
 	</head>
 	<body>
+		<a id="toppen">
+		</a>
 		<header>
-			<a class="Astleynamnlänk" href="./index.html">
+			<a class="Astleynamnlänk scroll" href="#toppen">
 				<h1>
 					Rick Astley
 				</h1>
 			</a>
 			<div class="mellanblockheader"></div>
-			<a class="Homeknapp" href="./index.html">
+			<a class="Homeknapp scroll" href="#toppen">
 				<h1 class="Homeknapp">
 					Home
 				</h1>
 			</a>
-			<a class="Gigsknapp" href="./gigs.html">
+			<a class="videolank scroll" href="#videoblockid">
+				<h1>
+					Videos
+				</h1>
+			</a>
+			<a class="Gigsknapp scroll" href="#gigsid">
 				<h1>
 					Gigs
 				</h1>
 			</a>
-			<a class="Merchknapp" href="./merch.html">
+			<a class="Merchknapp scroll" href="#merchid">
 				<h1>
 					Merch
 				</h1>
@@ -33,24 +40,67 @@
 			<a class="rick50bild">
 				<img src="./img/rickhandsomefrontpage.jpg"></img>
 			</a>
-			<div class="videoblock">
+			<div class="videoblock" id="videoblockid">
 				<div class="videor1">
-					<video height="420" width="500" controls="controls" type="video/mp4">
+					<video height="556" width="500" controls="controls" type="video/mp4">
 						<source src="./img/keepsinging.mp4">Your browser does not support the video tag.
 					</video>
-					<video height="420" width="500" controls="controls" type="video/mp4">
+					<video height="556" width="500" controls="controls" type="video/mp4">
 						<source src="./img/praywithme.mp4">Your browser does not support the video tag.
 					</video>
 				</div>
-				<div class="videor2">
-					<video height="420" controls="controls" type="video/mp4">
-						<source src="./img/RickrollD.mp4">Your browser does not support the video tag.
-					</video>
-					<video height="420" controls="controls" type="video/mp4">
-						<source src="./img/togetherforever.mp4">Your browser does not support the video tag.
-					</video>
+			</a>
+			<a class="gigs" id="gigsid">
+				<div class="gigsblock1">
+					<a>
+					<img src="./img/gigs1.jpg" height="500" width="600">
+					</a>
+					<a>
+					<img src="./img/gigs2.jpg" height="500" width="600">
+					</a>
+				</div>
+				<div class="gigsblock2">
+					<a>
+					<img src="./img/gigs3.jpg" height="500" width="600">
+					</a>
+					<a>
+					<img src="./img/gigs4.jpg" height="500" width="600">
+					</a>
+				</div>
+			</a>
+		<div class="contentmerch" id="merchid">
+			<div class="tröjblock">
+				<div class="bild">
+					<img src="https://bands-completelyindepe.netdna-ssl.com/prodimages/FB_RICK_0010_medium.jpg">
+				</div>
+				<div class="text">
+					<h2>
+						Tröjan du alltid drömt om.
+					</h2>
+				</div>
+			</div>
+			<div class="tröjblock">
+				<div class="bild">
+					<img src="https://bands-completelyindepe.netdna-ssl.com/prodimages/FB_RICK_0010_medium.jpg">
+				</div>
+				<div class="text">
+					<h2>
+						hej
+					</h2>
 				</div>
 			</div>
 		</div>
+		</div>
+		<script type="text/javascript" src="./js/jquery.js">
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function($) {
+			    $("a.scroll").click(function(event){
+			        event.preventDefault();
+			        var scrollTo = $(this.hash).offset().top - 90;
+			        $("html,body").animate({scrollTop:scrollTo}, 500);
+			    });
+			});
+		</script>
 	</body>
-</h1>
+</html>
