@@ -1,0 +1,7 @@
+body {
+	width: 1500px;
+	background-color: black;
+	background-image: url(../img/Rick_Astley_Tivoli_Gardens.png);
+	background-position: center;
+	background-attachment: fixed;
+}

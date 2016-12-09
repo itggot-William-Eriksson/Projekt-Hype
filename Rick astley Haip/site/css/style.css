@@ -1,7 +1,8 @@
 body {
 	padding: 0;
 	background-color: #111111;
-	width: 100%;
+	width: 1978.75px;
+	min-width: 1978.75px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -11,6 +12,7 @@ body {
 }
 
 header {
+	z-index: 1;
 	text-decoration: none;
 	position: fixed;
 	background-color: #232323; 
@@ -18,9 +20,10 @@ header {
 	border-right: 30px;
 	border-left: 30px; */
 	padding: 0px;
-	width: 100%;
+	width: 1978.75px;
+	min-width: 1978.75px;
 	border-style: solid;
-	height: 100px;
+	height: 85px;
 	max-height: 85px;
 	border-color: #232323;
 	display: flex;
@@ -91,27 +94,34 @@ img {
 	width: 100%;
 }
 
-.gigs {
-	display: flex;
+.gigs {	display: flex;
 	flex-direction: column;
 }
 
 .gigsblock1 {
-	background-color: red;
+	background-image: url(../img/Untitled-2.png);
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 0px;
+	border-bottom: 0px;
+	align-items: stretch;
+	max-height: 499px;
 }
 
 .gigsblock2 {
-	background-color: green;
+	background-image: url(../img/Untitled-2.png);
+	align-items: stretch;
 	display: flex;
 	flex-direction: row;
+	margin-bottom: 0px;
+	border-bottom: 0px;
+	max-height: 499px;
 }
 
 .videoblock {
 	background-position: center;
 	background-size: 2000px;
-	background-image: url(../img/starz.png);
+	/*background-image: url(../img/starz.png);*/
 }
 
 .rick50bild{
@@ -187,4 +197,170 @@ box-shadow: 6px 13px 22px 5px rgba(0,0,0,1);
 	width: 60%;
 	background-color: white;
 	flex-grow: 3;
+}
+
+.gigblid {
+	transition: 0.5s;
+}
+
+.gigblid:hover {
+	opacity: 0.3;
+	transition: 0.5s;
+}
+
+.gigsblock1_2 {
+	display: flex;
+	flex-direction: row;
+	max-height: 490px;
+	min-height: 490px;
+	max-width: 2000px;
+	min-width: 1978.75px;
+}
+
+.gig1 {
+	max-height: 490px;
+	min-height: 490px;
+	max-width: 494.683px;
+	flex-grow: 1;
+	background-size: 500px 500px;
+	background-color: black;
+	background-image: url(../img/gigs1.jpg);
+}
+
+.gig2 {
+	max-height: 490px;
+	min-height: 490px;
+	max-width: 494.683px;
+	flex-grow: 1;
+	background-size: 500px 500px;
+	background-color: black;
+	background-image: url(../img/gigs2.jpg);
+}
+
+.gig3 {
+	max-height: 490px;
+	min-height: 490px;
+	max-width: 494.683px;
+	flex-grow: 1;
+	background-size: 500px 500px;
+	background-color: black;
+	background-image: url(../img/gigs3.jpg);
+}
+
+.gig4 {
+	max-height: 490px;
+	min-height: 490px;
+	max-width: 494.683px;
+	flex-grow: 1;
+	background-size: 500px 500px;
+	background-color: black;
+	background-image: url(../img/gigs4.jpg);
+}
+
+.gigsblock2_2 {
+	display: flex;
+	flex-direction: row;
+	max-height: 490px;
+	min-height: 490px;
+	max-width: 2000px;
+	min-width: 1978.75px;
+}
+
+.gig5 {
+	max-height: 490px;
+	min-height: 490px;
+	max-width: 494.683px;
+	flex-grow: 1;
+	background-size: 500px 500px;
+	background-color: black;
+	background-image: url(../img/gigs5-Pearl-Theatre.jpg);
+}
+
+.gig6 {
+	max-height: 490px;
+	min-height: 490px;
+	max-width: 494.683px;
+	flex-grow: 1;
+	background-size: 500px 500px;
+	background-color: black;
+	background-image: url(../img/gigs6-Riverside-Ca.jpg);
+}
+
+.gig7 {
+	max-height: 490px;
+	min-height: 490px;
+	max-width: 494.683px;
+	flex-grow: 1;
+	background-size: 500px 500px;
+	background-color: black;
+	background-image: url(../img/gigs7-San-Diego-Houseofblues.jpg);
+}
+
+.gig8 {
+	max-height: 490px;
+	min-height: 490px;
+	max-width: 494.683px;
+	flex-grow: 1;
+	background-size: 500px 500px;
+	background-color: black;
+	background-image: url(../img/gigs8-Houston-warehouselive.jpg);
+}
+
+.innehall {
+	align-items: center;
+	opacity: 0;
+	min-height: 100%;
+	background-color: black;
+	color: white;
+	transition: 0.5s;
+	text-align: center;
+	font-size: 3em;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.innehall:hover {
+	opacity: 0.7;
+	transition: 0.5s;
+}
+
+button {
+	margin-top: 20px;
+	max-width: 200px;
+	background-color: #a4a4a4;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.spook:hover {
+	cursor: pointer;
+	transform: scale(60);
+	transition: 1s;
+	background-color: red;/*intended easter egg*/
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+footer {
+	margin-top: 30px;
+	margin-bottom: 0;
+	text-decoration: none;
+	background-color: #232323; 
+	padding: 0px;
+	border-style: solid;
+	height: 100px;
+	min-height: 100px;
+	max-height: 100px;
+	border-color: #232323;
+	display: flex;
+	flex-direction: row;
+	text-decoration-color: #232323;	
 }
